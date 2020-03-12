@@ -119,7 +119,7 @@ const processData = (data) => {
       return null;
     }
     // Rename South Korea
-    if (row['Country/Region'].toLowerCase().indexOf('republic of korea') >= 0) {
+    if (row['Country/Region'].toLowerCase().indexOf('korea') >= 0) {
       row['Country/Region'] = 'South Korea';
     }
     // Rename occupied palestinian territory
