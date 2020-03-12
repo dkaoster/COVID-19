@@ -1,0 +1,25 @@
+{
+  "name": "covid-19",
+  "version": "1.0.0",
+  "description": "Script for fetching latest COVID-19 data.",
+  "main": "fetchdata.js",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "d3": "^5.15.0",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node fetchdata.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dkaoster/COVID-19.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dkaoster/COVID-19/issues"
+  },
+  "homepage": "https://github.com/dkaoster/COVID-19#readme"
+}

@@ -2,6 +2,8 @@
 
 This is the data repository for the 2019 Novel Coronavirus Cases around the world, with countries properly named.
 
+To install dependencies, run `npm install`. To fetch the latest data from John Hopkins, run `npm run start`.
+
 ## Data Sources:
 * World Health Organization (WHO): https://www.who.int/
 * DXY.cn. Pneumonia. 2020. http://3g.dxy.cn/newh5/view/pneumonia.  
