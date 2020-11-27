@@ -1,0 +1,24 @@
+name: Update Data
+
+on:
+  schedule:
+    # Run every 6 hours
+    - cron: "0 */6 * * *"
+
+jobs:
+  update:
+    name: Update Data
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      - run: npm install
+      - run: npm run start
+      - uses: EndBug/add-and-commit@v5
+        with:
+          branch: master
+          message: 'update data'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
